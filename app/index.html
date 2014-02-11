@@ -1,0 +1,273 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frontendentwicklung - Oliver Klee - oliverklee.me</title>
+    <meta name="description" content="Portfolio von Oliver Klee, Frontendentwickler. Erstellung von Templates, Webapps und Websites in HTML5, CSS3 und JavaScript">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <link href='http://fonts.googleapis.com/css?family=Bitter|Raleway:300' rel='stylesheet' type='text/css'>
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+    <link rel="canonical" href="http://oliverklee.me">
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+        <p class="chromeframe">Du benutzt einen <strong>veralteten</strong> Browser. Bitte <a href="http://browsehappy.com/">update deinen Browser</a> oder <a href="http://www.google.com/chromeframe/?redirect=true">aktiviere Google Chrome Frame</a> um besser surfen zu können.</p>
+    <![endif]-->
+
+
+    <div class="page-wrap">
+      <header class="section-header">
+        <section class="section-mainnav clearfix">
+          <div class="logo-bar">
+            <div class="clearfix">
+              <h1><a class="ir title" href="#" title="Seite neu laden">Frontendentwicklung - Oliver Klee - oliverklee.me</a></h1>
+              <a class="show-menu" href="" title="Naviagation ausfahren">Menu</a>
+            </div>
+          </div>
+          <nav id="mainnav" role="navigation">
+            <ul class="clearfix">
+              <li><a href="#portfolio" title="Zum Portfolio">Portfolio</a></li>
+              <li><a href="#about" title="Erfahre mehr &uuml;ber mich">Über mich</a></li>
+              <li><a href="#skills" 
+                title="&Uuml;bersicht meiner F&auml;higkeiten als Frontendentwickler">Skills</a></li>
+              <li><a href="#tools" title="Diese Tools nutze ich">Tools</a></li>
+              <li><a href="#contact" title="Meine Kontaktm&ouml;glichkeiten">Kontakt</a></li>
+              <!-- <li><a href="#qanda" title="Diese Tools nutze ich">Q &amp; A</a></li> -->         
+            </ul>
+          </nav>
+        </section>
+      </header>
+      
+      <section class="section-welcome">
+        <div class="content-wrapper">
+          <p>Hi! Ich heiße <a href="#about" title="">Oliver</a> 
+            und bin <a href="#skills">Frontendentwickler.</a></p>
+        </div>
+      </section>
+      
+      <section  class="section-portfolio content-wrapper">
+        <h2 id="portfolio">Portfolio</h2>
+        <a class="prev-slide" onclick="mySwipe.prev()">prev</a>
+        <div id="slider" class="swipe">
+          <div class="swipe-wrap clearfix">
+            <article class="slides">
+              <figure class="slider-pic">
+                <img src="images/adregalus_net.jpg">
+              </figure>
+              <h3>Adregalus</h3>
+              <p>WordPress Tempate Programmierung und Wordpress Integration</p>
+              <p><a href="www.adregalus.net">www.adregalus.net</a></p>
+            </article>
+            <article class="slides">
+              <figure class="slider-pic">
+                <img src="images/leicht_app.jpg">
+              </figure>
+              <h3>LEICHT K&uuml;chen App (iOS)</h3>
+              <p>iPhone/iPad App auf Basis von PhoneGap, HTML5, CSS3, jQueryMobile</p>
+              <p><a href="https://itunes.apple.com/de/artist/leicht-kuchen-ag/id489459183">iTunesStore Link</a></p>
+            </article>
+            <article class="slides">
+              <figure class="slider-pic">
+                <img src="images/jz-artunique_de.jpg">
+              </figure>
+              <h3>JZ artunique</h3>
+              <p>Shopwaretemplate Programmierung und Shopware Integration</p>
+              <p><a href="http://jz-artunique.de">www.jz-artunique.de</a></p>
+            </article>
+            <article class="slides">
+              <figure class="slider-pic">
+                <img src="images/swisshaus_de.jpg">
+              </figure>
+              <h3>SwissHaus</h3>
+              <p>WordPressTemplate Programmierung und WordPress Integration</p>
+              <p><a href="http://www.swiss-haus.de">www.swiss-haus.de</a></p>
+            </article>
+            <article class="slides">
+              <figure class="slider-pic">
+                <img src="images/hw-accessoires_de.jpg">
+              </figure>
+              <h3>Hoffmann Wacker - Accessoires</h3>
+              <p>WordPressTemplate Programmierung und WordPress Integration</p>
+              <p><a href="http://www.hw-accessoires.de">www.hw-accessoires.de</a></p>
+            </article>
+          </div>
+        </div>
+        <a class="next-slide" onclick="mySwipe.next()">next</a>
+      </section>
+      
+      <section class="section-about">
+        <div class="content-wrapper">
+          <h2 id="about">Über Mich</h2>
+          <article>
+            <figure class="my-picture">
+              <img  src="images/oliver.jpg" alt="Bild von Oliver">
+            </figure>
+            <p>Mein Name ist Oliver Klee, bin 27 Jahre alt und arbeite als 
+              selbstständiger Frontend-Entwickler. </p>
+            <p>Webstandards liegen mir am Herzen. Benutzerfreundlichkeit 
+              und Zugänglichkeit sind meine stetigen Begleiter. Mobile First 
+              und Responsive Design sind Entwicklungsansätze die ich vertrete.</p>
+            <p>Ich bin kein klassischer Web-Designer oder Web-Entwickler. <br />
+              Viel mehr sehe ich mich als das Bindeglied, welches diese beiden Professionen
+              zusammenbringt. Durch Interesse und Erfahrung in beiden Bereichen spreche
+              ich beide "Sprachen" und kann gut zwischen den Parteien vermitteln und mit
+              allen die beste Lösung für das Projekt finden.</p>
+            <p class="clearfix">Mit "Frontend" ist das gemeint, was die Besucher einer Website 
+              zu sehen bekommen. Das besteht aus mehr als schicken Photoshop-
+              Kunstwerken und Inhalten, die mittels Skript aus einer 
+              Datenbank ausgelesen werden.</p>
+          </article>
+        </div>
+      </section>
+      
+      <section class="section-skills"> 
+        <div class="content-wrapper">
+          <h2 id="skills">Skills</h2>
+          <div class="grid clearfix"> 
+            <article class="grid-50">
+              <p>Als Frontendentwickler ist es meine Aufgabe, die verschiedensten 
+                Aspekte bei der Entwicklung einer Website im Auge zu behalten.</p>
+              <ul>
+                <li>Die Qualität des zugrunde liegenden HTML, CSS und JavaScript</li>
+                <li>Die Benutzerfreundlichkeit und Zugänglichkeit des Angebots.</li>
+                <li>Die Performance der Website.</li>
+                <li>Cross-browser compatibility</li>
+                <li>Die logische und semantische Struktur des Contents</li>
+              </ul>
+            </article>
+            <article class="grid-50">
+              <p>Hier eine kleine Übersicht mit welchen Technologien/Tools ich arbeite.</p>
+              <ul class="visualize-skills">
+                <li class="html">HMTL5</li>
+                <li class="css3">CSS3</li>
+                <li class="javascript">Javascript</li>
+                <li class="jquery">jQuery</li>
+                <li class="yaml">YAML</li>
+                <li class="wordpress">Wordpress</li>
+                <li class="shopware">Shopware</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section-tools">
+        <div class="content-wrapper">
+          <h2 id="tools">Tools</h2>  
+          <ul class="tools-list clearfix">
+            <li class="tools-apple">MacBookPro 2008</li>
+            <li class="tools-boilerplate">HTML5 Boilerplate</li>
+            <li class="tools-css3">CSS3</li>
+            <li class="tools-html5">HTML5</li>
+            <li class="tools-jquery">jQuery</li>
+            <li class="tools-wordpress">Wordpress</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="section-contact">
+        <div class="content-wrapper">
+          <h2 id="contact">Kontakt</h2>
+          <div class="grid clearfix">
+            <article class="grid-50">
+              <h3>Anschrift, E-Mail, Tel.</h3>
+              <div id="hcard-Oliver-Klee" class="vcard">
+               <a class="url fn n" href="http://oliverklee.me">
+                <span class="given-name">Oliver</span>
+                <span class="additional-name"></span>
+                <span class="family-name">Klee</span>
+              </a>
+               <div class="org">oliverklee.me</div>
+               <a class="email" href="workwith@oliverklee.me">workwith@oliverklee.me</a>
+               <div class="adr">
+                <div class="street-address">K&ouml;nigsbergerstraße 33a</div>
+                <span class="postal-code">63303</span><span class="locality">Dreieich</span>, <span class="region">Hessen</span>
+                <span class="country-name">Deutschland</span>
+               </div>
+               <div class="tel">06205 3640883</div>
+              </div>
+            </article>
+            <article class="grid-50">
+              <h3>Social Networks</h3>
+              <ul>
+                <li><a href="https://www.xing.com/profile/Oliver_Klee9">XING</a></li>
+                <li><a href="http://www.linkedin.com/pub/oliver-klee/38/585/a99">LinkedIn</a></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      <section class="section-qanda">
+        <div class="content-wrapper">
+          <h2>Q &amp; A</h2>
+          <article>
+            <div class="question"></div>
+            <div class="answer"></div>
+          </article>
+        </div>
+      </section>
+      -->
+      <footer>
+        <section class="section-impressum">
+          <div class="content-wrapper">
+            <h2>Impressum</h2><p>Angaben gemäß § 5 TMG:</p>
+            <p>Oliver Klee<br>
+              Frontendentwicklung<br>
+              K&ouml;nigsbergerstraße 33a<br>
+              63303 Dreieich</p>
+            <h3>Kontakt:</h3>
+            <p>Telefon: 06205 3640883<br>
+              Telefax:<br>
+              E-Mail: workwith@oliverklee.me</p>
+            <p>Quelle: <i>Impressum von <a href="http://www.e-recht24.de">e-recht24.de</a> speziell für Einzelunternehmer erzeugt.</i></p>
+            <h3>Haftungsausschluss:</h3>
+            <p><strong>Haftung für Inhalte</strong></p> <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p> <p><strong>Haftung für Links</strong></p> <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p> <p><strong>Urheberrecht</strong></p> <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p> <p><strong>Datenschutz</strong></p> <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. </p> <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. </p> <p>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p><p> </p>
+            <p><strong>Datenschutzerklärung für die Nutzung von Google Analytics</strong></p> <p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. ("Google"). Google Analytics verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt.</p> <p>Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.</p> <p>Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: <a href="http://tools.google.com/dlpage/gaoptout?hl=de">http://tools.google.com/dlpage/gaoptout?hl=de</a>.<p> </p>
+            <p><i>Quellenangaben: <a href="http://www.e-recht24.de/muster-disclaimer.htm" target="_blank">Disclaimer</a> von eRecht24, dem Portal zum Internetrecht von Rechtsanwalt Sören Siebert, <a href="http://www.google.com/intl/de/analytics/privacyoverview.html" target="_blank">Google Analytics Datenschutzerklärung</a></i></p>
+          </div>
+        </section>
+      
+      </footer>
+    </div>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/swipe/swipe.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script-->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

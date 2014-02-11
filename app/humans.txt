@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Oliver Klee -- Siteadmin/Frontend developer -- <twitter>
+
+# THANKS
+
+    Christopher Poeschel for the advice and tweaks on the Design
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr

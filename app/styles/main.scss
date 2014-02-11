@@ -1,0 +1,624 @@
+@import "normalize";
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #333;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background: #fefefe;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/**
+ * Define common styles
+ */
+body { font-family: Raleway,sans-serif; }
+
+h1, h2, h3, h4, h5, h6 { font-family: Bitter, serif; }
+h2 { text-align: center; }
+h3 { margin: 0 0 1em; }
+
+a {
+  color: #87ab73;
+  text-decoration: none;
+}
+a:active,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: underline;
+}
+
+/**
+ * Setting the width and margins of the sections
+ */
+.page-wrap {
+  background-color: #fff;
+  overflow: hidden;
+}
+.content-wrapper {
+  padding: 0 2%;
+}
+
+/**
+ * Logo & Navigation
+ */
+.logo-bar h1 {margin:0; padding: 0;}
+.section-header {
+  background-color: #b4e499;
+  width: auto;
+}
+.section-mainnav {
+  width: auto;
+}
+.section-mainnav .title {
+  background: transparent url('../images/sprite.png') 0 0 no-repeat;
+  background-position: 0 -1116px;
+  display: block;
+  float: left;
+  height: 36px;
+  max-height: 36px;
+  margin: 2%;
+  width: 36px;
+  max-width: 36px;
+  text-indent: -9999px;
+}
+.show-menu {
+  background: transparent url('../images/sprite.png') 0 0 no-repeat;
+  background-position: 0 -1374px;
+  display: block;
+  float: right;
+  height: 36px;
+  max-height: 36px;
+  margin: 2%;
+  width: 36px;
+  max-width: 36px;
+  text-indent: -9999px;
+}
+#mainnav { background-color: #fff; }
+.no-js .section-mainnav ul { 
+  display: none;
+  list-style: none; 
+}
+.section-mainnav ul {
+  margin: 0;
+  padding:0;
+}
+.section-mainnav li {
+  border-left: 1px #b4e499 solid;
+  border-right: 1px #b4e499 solid;
+  border-bottom: 1px #b4e499 solid;
+  margin: 0;
+  padding: 0;
+}
+.section-mainnav li a {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 2%;
+  transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.section-mainnav ul li a:hover, .section-mainnav ul li a:active {
+  background-color: #b4e499;
+  color: #fff;
+}
+
+/**
+ * Welcome
+ */
+.section-welcome { padding: 3% 0; }
+.section-welcome p {
+  font-size: 2em;
+  font-weight: 500;
+  text-align:center;
+}
+/**
+ * Portfolio
+ *
+ * Settings for all Devices
+ */
+.section-portfolio{ padding: 3% 2%; margin-bottom: 2%; }
+.section-portfolio .slides .slider-pic {
+  float: left;
+}
+.section-portfolio .slides .slider-pic img {
+  width: 100%;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap article {
+  display: inline;
+  float:left;
+  width:100%;
+  position: relative;
+  height: auto;
+  max-height: 70%;
+}
+/* Slider Controls */
+.next-slide, .prev-slide { display: none; }
+
+/**
+ * About
+ */
+.section-about {
+  background-color: #b4e499;
+  padding: 1% 0 3%;
+}
+.section-about .my-picture {
+  border-radius: 15px;
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 2px;
+  width: 125px;
+}
+.my-picture img { 
+  border-radius: 15px;
+  width: 100%; 
+}
+
+/**
+ * Skills
+ */
+.section-skills { padding: 3% 0; }
+
+/**
+ * Tools
+ */
+.section-tools { padding: 3% 0; }
+.tools-list {
+  width: auto;
+  list-style: none;
+  max-width: 160px;
+  margin: 0 auto;
+  padding: 0;
+}
+.tools-list li {
+  background: transparent url("../images/sprite.png") 0 0 no-repeat;
+  width: 160px;
+  height: 90px;
+  text-indent: -9999px;
+  float: left;
+  padding: 2% 0;
+}
+.tools-list .tools-apple { background-position: 0 0; } 
+.tools-list .tools-boilerplate{ background-position: 0 -604px;  } 
+.tools-list .tools-css3 { background-position: 0 -474px;  }  
+.tools-list .tools-html5 { background-position: 0 -734px;  } 
+.tools-list .tools-jquery { background-position: 0 -864px;  }
+.tools-list .tools-wordpress { background-position: 0 -1460px;  } 
+
+
+
+/* todo
+.tools-mail{ background-position: 0 -1202px;  } 
+.tools-mail_hover{ background-position: 0 -1288px;  } 
+*/
+
+/**
+ * Contact
+ */
+.section-contact{ padding: 3% 0; }
+.section-contact ul { list-style: none; margin: 0; padding: 0; }
+.section-contact li { margin: 0 0 2% 0 }
+.section-contact ul li a {
+  background-color: #fff;
+  border: 1px solid #b4e499;
+  color: #333;
+  display: inline-block;
+  margin: auto;
+  padding: 8px 15px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  width: 4em;
+}
+.section-contact ul li a:hover, .section-contact ul li a:active {
+  background-color: #b4e499;
+  color: #fff;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Override the primary ('mobile first') styles.
+   ========================================================================== */
+
+@media only screen and (min-width: 600px) {
+  /**
+   * Common Styles
+   */
+  h2 { font-size: 200%; }
+  
+  .content-wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  /**
+   * Welcome
+   */
+  .section-welcome p { font-size: 3em; }
+  
+  /**
+   * Header and Nav
+   */
+  .section-mainnav {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .logo-bar {
+    float: left;
+    padding: 2% 0 2% 2%;
+    width: 74px;
+  } 
+  .section-mainnav .title {
+    background: transparent url("../images/sprite.png") 0 -994px no-repeat;
+    height: 72px;
+    max-height: 72px;
+    width: 72px;
+    max-width: 72px;
+  }
+  #mainnav { 
+    background: #b4e499;
+    float: left;
+    padding: 2% 0 2% 3%;
+    width: auto;
+  }
+  .section-mainnav li {
+    float: left;
+    width: 5em;
+    line-height: 4.4em;
+    text-align: center;
+  }
+  .section-mainnav li a {
+    color: #fff;
+  }
+  
+  /**
+   * Portfolio
+   */
+  .section-portfolio {
+    position: relative;
+  }
+  .next-slide, .prev-slide { 
+    background: transparent url("../images/sprite.png");
+    width: 48px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    text-indent: -9999px;
+    cursor: pointer;
+    top: 300px;
+    z-index: 10000;
+  }
+  .prev-slide {
+    background-position: 0 -130px;
+    left: 0;
+  }
+  .next-slide {
+    background-position: 0 -302px;
+    right: 0;
+  }
+  .prev-slide:hover, .prev-slide:active {
+    background-position: 0 -216px;
+  }
+  .next-slide:hover, .next-slide:active {
+    background-position: 0 -388px;
+  }
+  
+  /**
+   * About
+   */
+  .section-about .my-picture {
+    float: left;
+  }
+  .section-about p {
+    margin-left: 150px;
+  }
+  
+  /**
+   * Tools
+   */
+  .tools-list {
+    max-width: 480px;
+  }
+  
+  /**
+   * Contact
+   */
+   .grid article { float: left; }
+   .grid-50 { width: 50%; }
+  
+  
+}
+
+@media only screen and (min-width: 1000px) {
+  /**
+   * Tools
+   */
+  .tools-list {
+    max-width: 960px;
+  }
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
