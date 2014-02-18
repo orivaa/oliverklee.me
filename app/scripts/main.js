@@ -1,3 +1,10 @@
+/**
+ * Main JS for oliverklee.me
+ *
+ * @author Oliver Klee
+ * @version 0.5.2
+ */
+
 window.mySwipe = new Swipe(document.getElementById('slider'), {
   startSlide: 1,
   speed: 400,
