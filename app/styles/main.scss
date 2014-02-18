@@ -136,32 +136,38 @@ a:visited {
 }
 .section-mainnav {
   width: auto;
+
+  .title {
+    background: transparent url('../images/sprite.png') 0 0 no-repeat;
+    background-position: 0 -1116px;
+    display: block;
+    float: left;
+    height: 36px;
+    max-height: 36px;
+    margin: 2%;
+    width: 36px;
+    max-width: 36px;
+    text-indent: -9999px;
+  }
+
+  .show-menu {
+    background: transparent url('../images/sprite.png') 0 0 no-repeat;
+    background-position: 0 -1374px;
+    display: block;
+    float: right;
+    height: 36px;
+    max-height: 36px;
+    margin: 2%;
+    width: 36px;
+    max-width: 36px;
+    text-indent: -9999px;
+  }
+
 }
-.section-mainnav .title {
-  background: transparent url('../images/sprite.png') 0 0 no-repeat;
-  background-position: 0 -1116px;
-  display: block;
-  float: left;
-  height: 36px;
-  max-height: 36px;
-  margin: 2%;
-  width: 36px;
-  max-width: 36px;
-  text-indent: -9999px;
+
+#mainnav { 
+  background-color: #fff; 
 }
-.show-menu {
-  background: transparent url('../images/sprite.png') 0 0 no-repeat;
-  background-position: 0 -1374px;
-  display: block;
-  float: right;
-  height: 36px;
-  max-height: 36px;
-  margin: 2%;
-  width: 36px;
-  max-width: 36px;
-  text-indent: -9999px;
-}
-#mainnav { background-color: #fff; }
 .no-js .section-mainnav ul { 
   display: none;
   list-style: none; 
@@ -468,9 +474,11 @@ a:visited {
   }
   .section-mainnav li {
     float: left;
-    width: 5em;
     line-height: 4.4em;
+    margin: 0 0.5em;
     text-align: center;
+    width: auto;
+    white-space: nowrap;
   }
   .section-mainnav li a {
     color: #fff;
