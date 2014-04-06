@@ -9,11 +9,26 @@ jQuery(function($) {
 
     window.mySwipe = new Swipe(document.getElementById('slider'), {
         startSlide: 1,
-        speed: 400,
+        speed: 300,
         auto: 4000,
         continuous: true,
         disableScroll: false,
+        stopPropagation: false
     });
+
+    var swipeControl = function() {
+        var ctrlLeft = $('.prev-slide');
+        var ctrlRight = $('.next-slide');
+
+        ctrlLeft.click(function() {
+            window.mySwipe.prev();
+        });
+
+        ctrlRight.click(function() {
+            window.mySwipe.next();
+        });
+
+    };
 
     var initResizeMenu = function() {
         // This will hold the state of the pop-up menu
@@ -67,6 +82,7 @@ jQuery(function($) {
         setupMenuButton();
     };
 
+    swipeControl();
     initResizeMenu();
 
 });
