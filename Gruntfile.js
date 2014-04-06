@@ -163,7 +163,7 @@ module.exports = function (grunt) {
             },
             server: {
                 options: {
-                    debugInfo: true
+                    debugInfo: false
                 }
             }
         },
@@ -171,7 +171,7 @@ module.exports = function (grunt) {
         // Add vendor prefixed styles
         autoprefixer: {
             options: {
-                browsers: ['ie >= 10', 'last 10 version', 'ff > 3']
+                browsers: ['last 2 version']
             },
             dist: {
                 files: [{
